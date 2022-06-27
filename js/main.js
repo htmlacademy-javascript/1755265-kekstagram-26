@@ -1,4 +1,4 @@
- let amountCommentary = (field, size) => {
+ let amountCommentary = function(field, size) {
    if (field.value.length < size) {
      true;
    } else {
