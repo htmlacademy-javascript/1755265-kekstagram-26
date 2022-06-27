@@ -8,3 +8,4 @@ function amountCommentary(field, size) {
   }
 }
 
+amountCommentary(field,140);
