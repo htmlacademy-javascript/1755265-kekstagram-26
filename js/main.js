@@ -6,6 +6,7 @@ function amountCommentary(field, size) {
   } else {
     newComment--;
   }
+  return amountCommentary;
 }
 
-amountCommentary(field,140);
+amountCommentary(newComment,140);
