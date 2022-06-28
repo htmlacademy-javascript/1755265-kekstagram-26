@@ -13,5 +13,6 @@ function getRandomNumber(min, max) {
 }
 
 getRandomNumber(0,140);
+checkStringLength();
 
 
