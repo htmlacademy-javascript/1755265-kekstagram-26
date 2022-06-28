@@ -1,12 +1,17 @@
-let newComment = document.querySelector('.social__footer-text');
-
-function amountCommentary(field, size) {
-  if (field.value.length < size) {
-    newComment++;
+function checkStringLength(string,size ) {
+  if (string > size) {
+    return true;
   } else {
-    newComment--;
+    return false;
   }
-  return amountCommentary;
 }
 
-amountCommentary(newComment,140);
+function getRandomNumber(min, max) {
+  min = Math.ceil(min);
+  max = Math.floor(max);
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+getRandomNumber(0,140);
+
+
