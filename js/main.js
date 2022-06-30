@@ -1,8 +1,8 @@
-const checkStringLength = (string,size) => {
+function checkStringLength(string, size) {
   return string.length > size;
 };
 
-const getRandomNumber = (min, max) => {
+function getRandomNumber(min, max) {
   if (min < 0 || max < 0) {
     throw new RangeError(`Only non-negative range allowed([${min}, ${max}])`);
   }
