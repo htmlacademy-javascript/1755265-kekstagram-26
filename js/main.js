@@ -1,6 +1,6 @@
 const checkStringLength = (string,size) => {
   return string.length > size;
-}
+};
 
 const getRandomNumber = (min, max) => {
   if (min < 0 || max < 0) {
