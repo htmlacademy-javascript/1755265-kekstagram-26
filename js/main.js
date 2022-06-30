@@ -1,18 +1,12 @@
-function checkStringLength(string,size ) {
-  if (string > size) {
-    return true;
-  } else {
-    return false;
+const checkStringLength =(string,size ) =>
+  string.length > size;
+
+const getRandomNumber = function(min, max) {
+    if (min < 0  || max < 0 ) {
+      throw new RangeError(Only non-negative range allowed([${min}, ${max}]));
   }
-}
+     return Math.floor(Math.random() * (max-min)) + min;
+  }
 
-function getRandomNumber(min, max) {
-  min = Math.ceil(min);
-  max = Math.floor(max);
-  return Math.floor(Math.random() * (max - min + 1)) + min;
-}
-
-getRandomNumber(0,140);
+getRandomNumber();
 checkStringLength();
-
-
